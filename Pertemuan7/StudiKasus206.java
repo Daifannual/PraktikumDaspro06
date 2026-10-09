@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class StudiKasus206 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int jmlDokumen, peringkat;
+        int jmlDokumen, peringkat, statusDana;
         String namaMhs, jenisKeg, pesan;
 
         System.out.print("Nama mahasiswa : ");
@@ -24,10 +24,26 @@ public class StudiKasus206 {
                     pesan = "Dokumen tidak lengkap (kurang " + jmlDokumen
                             + " dokumen). Dana penghargaan tidak diberikan.";
                 } else {
-                    pesan = "dana diberikan";
+                    pesan = "Dokumen lengkap. dana diberikan";
                 }
             } else {
                 pesan = "anda bukan peraih peringkat 1-3. Dana penghargaan tidak diberikan.";
+            }
+        } else if (jenisKeg.equalsIgnoreCase("PKM")) {
+            System.out.print("Jumlah dokumen : ");
+            jmlDokumen = sc.nextInt();
+            System.out.print("Apakah lolos pendanaan? (1 ya, 0 tidak) : ");
+            statusDana = sc.nextInt();
+            if (statusDana == 1) {
+                if (jmlDokumen < 4) {
+                    jmlDokumen = 4 - jmlDokumen;
+                    pesan = "Dokumen tidak lengkap (kurang " + jmlDokumen
+                            + " dokumen). Dana penghargaan tidak diberikan.";
+                } else {
+                    pesan = "Dokumen lengkap. dana diberikan";
+                }
+            } else {
+                pesan = "anda tidak lolos pendanaan. Dana penghargaan tidak diberikan";
             }
         } else {
             pesan = "Diluar kegiatan yang tersedia";
