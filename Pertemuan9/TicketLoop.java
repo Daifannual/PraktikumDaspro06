@@ -11,7 +11,7 @@ public class TicketLoop {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int jmlTiket, totalTiket = 0, i = 0;
-        double diskon = 0, totalPendapatan = 0, hargaTiket = 50000;
+        double diskon = 0, totalPendapatan = 0, hargaTiket = 40000;
         
         System.out.println("=== Sistem Penjualan Tiket ===");
         System.out.println("Ketik '0' pada jumlah tiket untuk mengakhiri program harian.\n");
@@ -32,9 +32,9 @@ public class TicketLoop {
             double totalHarga = jmlTiket * hargaTiket;
 
             if (jmlTiket > 10) {
-                diskon = 0.15;
-            } else if (jmlTiket > 4){
-                diskon = 0.1;
+                diskon = 0.17;
+            } else if (jmlTiket > 3){
+                diskon = 0.09;
             }
 
             totalHarga = totalHarga - (totalHarga * diskon);
