@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class KafeDoWhile06 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int kopi, teh, roti, hargaKopi = 11000, hargaTeh = 7000, hargaRoti = 15000, totalHarga;
+        int kopi, teh, roti, hargaKopi = 12000, hargaTeh = 7000, hargaRoti = 20000, totalHarga;
         String namaPelanggan;
 
         do {
