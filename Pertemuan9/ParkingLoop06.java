@@ -9,8 +9,8 @@ public class ParkingLoop06 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int tarifMobil = 3000;
-        int tarifMotor = 2000;
+        int tarifMobil = 2500;
+        int tarifMotor = 1500;
 
         int jenis, durasi, total = 0;
 
