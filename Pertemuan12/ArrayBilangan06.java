@@ -4,12 +4,7 @@ import java.util.Arrays;
 
 public class ArrayBilangan06 {
     public static void main(String[] args) {
-        int[] bil = new int[4];
-
-        bil[0] = 6;
-        bil[1] = 14;
-        bil[2] = -7;
-        bil[3] = 26;
+        int[] bil = { 6, 14, -7, 26 };
 
         for (int i = 0; i < bil.length; i++) {
             System.out.println("bil[" + i + "] = " + bil[i]);
